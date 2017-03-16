@@ -157,17 +157,21 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NavigateController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\EntityPermission.cs" />
     <Compile Include="Entities\Mapping\EntityPermissionMap.cs" />
+    <Compile Include="Entities\Mapping\NavigateMap.cs" />
     <Compile Include="Entities\Mapping\RoleMap.cs" />
     <Compile Include="Entities\Mapping\UserMap.cs" />
+    <Compile Include="Entities\Navigate.cs" />
     <Compile Include="Entities\Permission.cs" />
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\XCodeContext.cs" />
+    <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -177,6 +181,8 @@
     <Compile Include="Security\ActionAuthorizeAttribute.cs" />
     <Compile Include="Security\AuthorizeProvider.cs" />
     <Compile Include="Security\IAuthorizeProvider.cs" />
+    <Compile Include="Security\EnityPermissionService.cs" />
+    <Compile Include="Security\IEnityPermissionService.cs" />
     <Compile Include="Security\IPermissionProvider.cs" />
     <Compile Include="Security\IPermissionService.cs" />
     <Compile Include="Security\PermissionProvider.cs" />
@@ -229,7 +235,9 @@
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Navigate\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

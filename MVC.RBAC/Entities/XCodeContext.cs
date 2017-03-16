@@ -24,6 +24,8 @@ namespace MVC.RBAC.Entities
 
         public DbSet<EntityPermission> EntityPermissions { get; set; }
 
+        public DbSet<Navigate> Navigates { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
